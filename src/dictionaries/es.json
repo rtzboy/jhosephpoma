@@ -1,0 +1,6 @@
+{
+	"navigation": [
+		{ "id": 1, "href": "/", "name": "Inicio" },
+		{ "id": 2, "href": "/about", "name": "Acerca" }
+	]
+}
