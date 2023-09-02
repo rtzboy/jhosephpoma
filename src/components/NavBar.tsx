@@ -1,6 +1,8 @@
 'use client';
+import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+import logoname from '../../public/logo.png';
 import LangSwitcher from './lang-switcher';
 
 type NavbarT = {
@@ -11,10 +13,13 @@ type NavbarT = {
 const NavBar = ({ links, lang }: NavbarT) => {
 	const pathname = usePathname();
 	return (
-		<nav className='h-[60px] relative'>
+		<nav className='h-[60px] relative px-8'>
 			<div className='max-w-7xl w-full h-full flex items-center justify-between mx-auto'>
-				<h1>JhosephPoma</h1>
-				<ul className='flex gap-4'>
+				<h1 className='flex items-center gap-4 text-xl'>
+					<Image src={logoname} width={30} height={30} alt='jhoseph' />
+					Jhoseph Poma
+				</h1>
+				<ul className='flex gap-4 items-center'>
 					{links.map(link => {
 						let linkClass =
 							`/${lang}${link.href}`.length === 4
@@ -34,8 +39,8 @@ const NavBar = ({ links, lang }: NavbarT) => {
 							</li>
 						);
 					})}
+					<LangSwitcher lang={lang} />
 				</ul>
-				<LangSwitcher />
 			</div>
 		</nav>
 	);
