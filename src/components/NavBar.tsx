@@ -3,7 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useEffect, useState } from 'react';
-import logoname from '../../public/logo.png';
+import logoname from '../../public/logo_dark.png';
 import LangSwitcher from './lang-switcher';
 
 type NavbarT = {
@@ -28,11 +28,15 @@ const NavBar = ({ links, lang }: NavbarT) => {
 	}, []);
 
 	return (
-		<nav className='h-[60px] relative'>
+		<nav className='h-[80px] relative'>
 			<div className='max-w-7xl w-full px-8 h-full flex items-center justify-between mx-auto'>
-				<h1 className='flex items-center gap-4 text-xl'>
-					<Image src={logoname} width={30} height={30} alt='jhoseph' />
-					Jhoseph Poma
+				<h1>
+					<Link href={`/${lang}`} className='flex items-center gap-4 text-2xl'>
+						<Image src={logoname} width={35} height={35} alt='jhoseph' />
+						<span className='bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 font-bold to-emerald-300'>
+							Jhoseph Poma
+						</span>
+					</Link>
 				</h1>
 				<ul className='flex gap-4 items-center'>
 					{links.map(link => {
@@ -58,7 +62,7 @@ const NavBar = ({ links, lang }: NavbarT) => {
 				</ul>
 			</div>
 			<ul
-				className={`flex transition-all duration-500 justify-center gap-8 h-[60px] items-center fixed backdrop-blur-sm w-full ${
+				className={`flex transition-all duration-500 justify-center gap-8 h-[70px] items-center fixed backdrop-blur-[8px] w-full ${
 					floatingNav ? 'opacity-100 visible top-0' : 'opacity-0 invisible -top-16'
 				}`}
 			>
