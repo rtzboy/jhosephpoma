@@ -1,7 +1,7 @@
 {
 	"navigation": [
 		{ "id": 1, "href": "/", "name": "Inicio" },
-		{ "id": 2, "href": "/about", "name": "Acerca" },
-		{ "id": 3, "href": "/projects", "name": "Proyectos" }
+		{ "id": 2, "href": "/projects", "name": "Proyectos" },
+		{ "id": 3, "href": "/contact", "name": "Contacto" }
 	]
 }

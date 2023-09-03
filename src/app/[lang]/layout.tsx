@@ -1,10 +1,10 @@
 import Header from '@/components/Header';
 import type { Metadata } from 'next';
-import { Roboto } from 'next/font/google';
-import { i18n, Locale } from '../../i18n-config';
+import { Roboto_Mono } from 'next/font/google';
+import { Locale, i18n } from '../../i18n-config';
 import './globals.css';
 
-const roboto = Roboto({ weight: '400', subsets: ['latin'] });
+const roboto = Roboto_Mono({ weight: '400', subsets: ['latin'] });
 
 export const metadata: Metadata = {
 	title: 'JhosephPDev',
