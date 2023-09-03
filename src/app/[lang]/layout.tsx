@@ -23,7 +23,7 @@ type RootLayoutT = {
 export default function RootLayout({ children, params }: RootLayoutT) {
 	return (
 		<html lang={params.lang}>
-			<body className={`${roboto.className}`}>
+			<body className={`${roboto.className} bg-[#121212] text-white`}>
 				<Header lang={params.lang} />
 				{children}
 			</body>

@@ -8,7 +8,7 @@ const Header = async ({ lang }: HeaderT) => {
 	const { navigation } = await getDictionary(lang);
 
 	return (
-		<header>
+		<header className='absolute top-0 w-full z-50'>
 			<NavBar links={navigation} lang={lang} />
 		</header>
 	);
