@@ -33,7 +33,7 @@ const NavBar = ({ links, lang }: NavbarT) => {
 				<h1>
 					<Link href={`/${lang}`} className='flex items-center gap-4 text-2xl'>
 						<Image src={logoname} width={35} height={35} alt='jhoseph' />
-						<span className='bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 font-bold to-emerald-300'>
+						<span className='bg-clip-text shadow-text text-transparent bg-gradient-to-r from-cyan-400 font-bold to-emerald-300'>
 							Jhoseph Poma
 						</span>
 					</Link>
