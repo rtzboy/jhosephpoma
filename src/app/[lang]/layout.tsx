@@ -1,4 +1,5 @@
 import Header from '@/components/Header';
+import MouseCircle from '@/components/MouseCircle';
 import type { Metadata } from 'next';
 import { Roboto_Mono } from 'next/font/google';
 import { Locale, i18n } from '../../i18n-config';
@@ -24,6 +25,7 @@ export default function RootLayout({ children, params }: RootLayoutT) {
 	return (
 		<html lang={params.lang}>
 			<body className={`${roboto.className} bg-[#121212] text-white`}>
+				<MouseCircle />
 				<Header lang={params.lang} />
 				{children}
 			</body>
