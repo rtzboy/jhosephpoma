@@ -9,3 +9,19 @@
 .shadow-text {
 	text-shadow: rgba(34, 211, 238, 0.5) 1px 0 7px;
 }
+
+.navbar-nav {
+	@apply pointer-events-none;
+}
+
+.navbar-nav > * {
+	@apply pointer-events-auto;
+}
+
+.navbar-nav:hover > * {
+	@apply opacity-40;
+}
+
+.navbar-nav:hover > *:hover {
+	@apply opacity-100;
+}
