@@ -3,5 +3,255 @@
 		{ "id": 1, "href": "/", "name": "Home" },
 		{ "id": 2, "href": "/projects", "name": "Projects" },
 		{ "id": 3, "href": "/contact", "name": "Contact" }
-	]
+	],
+	"project": {
+		"title": "My Work",
+		"description": "Projects like this that allows users to easily search for recipes on various websites. Whether you're a seasoned chef looking for new inspiration or a cooking enthusiast looking for the perfect dish, Plate Explorer offers a centralized platform for discovering and accessing a wide range of recipes from the web.",
+		"subtitle": "Done Projects",
+		"works": [
+			{
+				"name": "PassPower",
+				"description": "PassPower aims to provide users with a versatile tool for creating secure passwords.",
+				"tags": [
+					{
+						"name": "html",
+						"color": "orange",
+						"image": "/tech/html.png"
+					},
+					{
+						"name": "css",
+						"color": "blue",
+						"image": "/tech/css.png"
+					},
+					{
+						"name": "javascript",
+						"color": "yellow",
+						"image": "/tech/javascript.png"
+					}
+				],
+				"image": "/pngprojects/passpower.png",
+				"demo_links": [
+					{
+						"to": "live",
+						"href": "https://rtzboy.github.io/pass_gener_jp/",
+						"icon": "/tech/link.png"
+					},
+					{
+						"to": "github",
+						"href": "https://github.com/rtzboy/pass_gener_jp",
+						"icon": "/tech/github.png"
+					}
+				]
+			},
+			{
+				"name": "QuoteQuik Typing Challenge",
+				"description": "QuoteQuik Typing Challenge offers users to improve their typing skills while transcribing random quotes.",
+				"tags": [
+					{
+						"name": "react",
+						"color": "blue",
+						"image": "/tech/reactjs.png"
+					},
+					{
+						"name": "tailwind",
+						"color": "teal",
+						"image": "/tech/tailwind.png"
+					},
+					{
+						"name": "react-icons",
+						"color": "rose",
+						"image": "/tech/reacticons.svg"
+					}
+				],
+				"image": "/pngprojects/quotequik.png",
+				"demo_links": [
+					{
+						"to": "live",
+						"href": "https://typingtestjpdev.netlify.app/",
+						"icon": "/tech/link.png"
+					},
+					{
+						"to": "github",
+						"href": "https://github.com/rtzboy/CasualProjects",
+						"icon": "/tech/github.png"
+					}
+				]
+			},
+			{
+				"name": "SuperSearch: Uniting Worlds",
+				"description": "SuperSearch: Uniting Worlds offers superhero fans information about the biography, powerstats and more.",
+				"tags": [
+					{
+						"name": "react",
+						"color": "blue",
+						"image": "/tech/reactjs.png"
+					},
+					{
+						"name": "tailwind",
+						"color": "teal",
+						"image": "/tech/tailwind.png"
+					},
+					{
+						"name": "react-icons",
+						"color": "rose",
+						"image": "/tech/reacticons.svg"
+					}
+				],
+				"image": "/pngprojects/supersearch.png",
+				"demo_links": [
+					{
+						"to": "live",
+						"href": "https://super-hero-woad.vercel.app/",
+						"icon": "/tech/link.png"
+					},
+					{
+						"to": "github",
+						"href": "https://github.com/rtzboy/SuperHeroAPI",
+						"icon": "/tech/github.png"
+					}
+				]
+			},
+			{
+				"name": "EasyTask",
+				"description": "EasyTask is a simple task list allows you to add, edit and delete tasks.",
+				"tags": [
+					{
+						"name": "react",
+						"color": "blue",
+						"image": "/tech/reactjs.png"
+					},
+					{
+						"name": "tailwind",
+						"color": "teal",
+						"image": "/tech/tailwind.png"
+					}
+				],
+				"image": "/pngprojects/todozen.png",
+				"demo_links": [
+					{
+						"to": "live",
+						"href": "https://todolistjpdev.netlify.app/",
+						"icon": "/tech/link.png"
+					},
+					{
+						"to": "github",
+						"href": "https://github.com/rtzboy/todolist",
+						"icon": "/tech/github.png"
+					}
+				]
+			},
+			{
+				"name": "Plate Explorer",
+				"description": "Plate Explorer allows users to easily search for recipes on various websites.",
+				"tags": [
+					{
+						"name": "react",
+						"color": "blue",
+						"image": "/tech/reactjs.png"
+					},
+					{
+						"name": "tailwind",
+						"color": "teal",
+						"image": "/tech/tailwind.png"
+					},
+					{
+						"name": "node",
+						"color": "green",
+						"image": "/tech/nodejs.png"
+					},
+					{
+						"name": "mongodb",
+						"color": "green",
+						"image": "/tech/mongodb.png"
+					}
+				],
+				"image": "/pngprojects/platexplorer.png",
+				"demo_links": [
+					{
+						"to": "",
+						"href": "https://platexplorerjpdev.netlify.app/",
+						"icon": "/tech/link.png"
+					},
+					{
+						"to": "",
+						"href": "https://github.com/rtzboy/foodrecipes",
+						"icon": "/tech/github.png"
+					}
+				]
+			},
+			{
+				"name": "WeatherWonders",
+				"description": "Stay informed about the current weather conditions and a 5-day forecast",
+				"tags": [
+					{
+						"name": "react",
+						"color": "blue",
+						"image": "/tech/reactjs.png"
+					},
+					{
+						"name": "tailwind",
+						"color": "teal",
+						"image": "/tech/tailwind.png"
+					}
+				],
+				"image": "/pngprojects/weather.png",
+				"demo_links": [
+					{
+						"to": "",
+						"href": "https://weatherjpdev.netlify.app/",
+						"icon": "/tech/link.png"
+					},
+					{
+						"to": "",
+						"href": "https://github.com/rtzboy/weatherapp",
+						"icon": "/tech/github.png"
+					}
+				]
+			},
+			{
+				"name": "SocialSphere",
+				"description": "SocialSphere allows users to create posts and share them with their followers.",
+				"tags": [
+					{
+						"name": "react",
+						"color": "blue",
+						"image": "/tech/reactjs.png"
+					},
+					{
+						"name": "tailwind",
+						"color": "teal",
+						"image": "/tech/tailwind.png"
+					},
+					{
+						"name": "redux",
+						"color": "violet",
+						"image": "/tech/redux.png"
+					},
+					{
+						"name": "node",
+						"color": "green",
+						"image": "/tech/nodejs.png"
+					},
+					{
+						"name": "mongodb",
+						"color": "green",
+						"image": "/tech/mongodb.png"
+					}
+				],
+				"image": "/pngprojects/socialsphere.png",
+				"demo_links": [
+					{
+						"to": "live",
+						"href": "https://sphereback.vercel.app/login",
+						"icon": "/tech/link.png"
+					},
+					{
+						"to": "github",
+						"href": "https://github.com/rtzboy/socialmedia",
+						"icon": "/tech/github.png"
+					}
+				]
+			}
+		]
+	}
 }

@@ -22,14 +22,12 @@ function getLocale(request: NextRequest): string | undefined {
 
 export function middleware(request: NextRequest) {
 	const pathname = request.nextUrl.pathname;
-
 	const pathnameIsMissingLocale = i18n.locales.every(
 		locale => !pathname.startsWith(`/${locale}/`) && pathname !== `/${locale}`
 	);
 
 	if (pathnameIsMissingLocale) {
 		const locale = getLocale(request);
-
 		return NextResponse.redirect(
 			new URL(`/${locale}${pathname.startsWith('/') ? '' : '/'}${pathname}`, request.url)
 		);
@@ -37,5 +35,6 @@ export function middleware(request: NextRequest) {
 }
 
 export const config = {
-	matcher: ['/((?!api|_next/static|_next/image|favicon.ico).*)']
+	// load images on <Image /> component but dont redirect localhost:3000/ to localhost:3000/(es|en)
+	matcher: ['/(en|es)((?!api|_next/static|_next/image|favicon.ico).*)']
 };

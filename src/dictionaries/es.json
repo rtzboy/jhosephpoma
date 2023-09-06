@@ -3,5 +3,255 @@
 		{ "id": 1, "href": "/", "name": "Inicio" },
 		{ "id": 2, "href": "/projects", "name": "Proyectos" },
 		{ "id": 3, "href": "/contact", "name": "Contacto" }
-	]
+	],
+	"project": {
+		"title": "Mi trabajo",
+		"description": "Proyectos como este que permiten a los usuarios buscar recetas fácilmente en varios sitios web. Ya sea que sea un chef experimentado que busca nueva inspiración o un entusiasta de la cocina que busca el plato perfecto, Plate Explorer ofrece una plataforma centralizada para descubrir y acceder a una amplia gama de recetas.",
+		"subtitle": "Proyectos Terminados",
+		"works": [
+			{
+				"name": "PassPower",
+				"description": "PassPower tiene como objetivo proporcionar a los usuarios una herramienta versátil para crear contraseñas seguras.",
+				"tags": [
+					{
+						"name": "html",
+						"color": "orange",
+						"image": "/tech/html.png"
+					},
+					{
+						"name": "css",
+						"color": "blue",
+						"image": "/tech/css.png"
+					},
+					{
+						"name": "javascript",
+						"color": "yellow",
+						"image": "/tech/javascript.png"
+					}
+				],
+				"image": "/pngprojects/passpower.png",
+				"demo_links": [
+					{
+						"to": "live",
+						"href": "https://rtzboy.github.io/pass_gener_jp/",
+						"icon": "/tech/link.png"
+					},
+					{
+						"to": "github",
+						"href": "https://github.com/rtzboy/pass_gener_jp",
+						"icon": "/tech/github.png"
+					}
+				]
+			},
+			{
+				"name": "QuoteQuik Typing Challenge",
+				"description": "QuoteQuik Typing Challenge ofrece a los usuarios mejorar sus habilidades de mecanografía mientras transcriben citas aleatorias.",
+				"tags": [
+					{
+						"name": "react",
+						"color": "blue",
+						"image": "/tech/reactjs.png"
+					},
+					{
+						"name": "tailwind",
+						"color": "teal",
+						"image": "/tech/tailwind.png"
+					},
+					{
+						"name": "react-icons",
+						"color": "rose",
+						"image": "/tech/reacticons.svg"
+					}
+				],
+				"image": "/pngprojects/quotequik.png",
+				"demo_links": [
+					{
+						"to": "live",
+						"href": "https://typingtestjpdev.netlify.app/",
+						"icon": "/tech/link.png"
+					},
+					{
+						"to": "github",
+						"href": "https://github.com/rtzboy/CasualProjects",
+						"icon": "/tech/github.png"
+					}
+				]
+			},
+			{
+				"name": "SuperSearch: Uniting Worlds",
+				"description": "SuperSearch: Uniting Worlds proporciona a los fanáticos de los superhéroes información biográfica, estadísticas de poder y más.",
+				"tags": [
+					{
+						"name": "react",
+						"color": "blue",
+						"image": "/tech/reactjs.png"
+					},
+					{
+						"name": "tailwind",
+						"color": "teal",
+						"image": "/tech/tailwind.png"
+					},
+					{
+						"name": "react-icons",
+						"color": "rose",
+						"image": "/tech/reacticons.svg"
+					}
+				],
+				"image": "/pngprojects/supersearch.png",
+				"demo_links": [
+					{
+						"to": "live",
+						"href": "https://super-hero-woad.vercel.app/",
+						"icon": "/tech/link.png"
+					},
+					{
+						"to": "github",
+						"href": "https://github.com/rtzboy/SuperHeroAPI",
+						"icon": "/tech/github.png"
+					}
+				]
+			},
+			{
+				"name": "EasyTask ",
+				"description": "EasyTask es una lista de tareas simple que le permite agregar, editar y eliminar tareas.",
+				"tags": [
+					{
+						"name": "react",
+						"color": "blue",
+						"image": "/tech/reactjs.png"
+					},
+					{
+						"name": "tailwind",
+						"color": "teal",
+						"image": "/tech/tailwind.png"
+					}
+				],
+				"image": "/pngprojects/todozen.png",
+				"demo_links": [
+					{
+						"to": "live",
+						"href": "https://todolistjpdev.netlify.app/",
+						"icon": "/tech/link.png"
+					},
+					{
+						"to": "github",
+						"href": "https://github.com/rtzboy/todolist",
+						"icon": "/tech/github.png"
+					}
+				]
+			},
+			{
+				"name": "Plate Explorer",
+				"description": "Plate Explorer permite a los usuarios buscar fácilmente recetas en varios sitios web.",
+				"tags": [
+					{
+						"name": "react",
+						"color": "blue",
+						"image": "/tech/reactjs.png"
+					},
+					{
+						"name": "tailwind",
+						"color": "teal",
+						"image": "/tech/tailwind.png"
+					},
+					{
+						"name": "node",
+						"color": "green",
+						"image": "/tech/nodejs.png"
+					},
+					{
+						"name": "mongodb",
+						"color": "green",
+						"image": "/tech/mongodb.png"
+					}
+				],
+				"image": "/pngprojects/platexplorer.png",
+				"demo_links": [
+					{
+						"to": "live",
+						"href": "https://platexplorerjpdev.netlify.app/",
+						"icon": "/tech/link.png"
+					},
+					{
+						"to": "github",
+						"href": "https://github.com/rtzboy/foodrecipes",
+						"icon": "/tech/github.png"
+					}
+				]
+			},
+			{
+				"name": "WeatherWonders",
+				"description": "Manténgase informado sobre las condiciones climáticas actuales y un pronóstico de 5 días.",
+				"tags": [
+					{
+						"name": "react",
+						"color": "blue",
+						"image": "/tech/reactjs.png"
+					},
+					{
+						"name": "tailwind",
+						"color": "teal",
+						"image": "/tech/tailwind.png"
+					}
+				],
+				"image": "/pngprojects/weather.png",
+				"demo_links": [
+					{
+						"to": "",
+						"href": "https://weatherjpdev.netlify.app/",
+						"icon": "/tech/link.png"
+					},
+					{
+						"to": "",
+						"href": "https://github.com/rtzboy/weatherapp",
+						"icon": "/tech/github.png"
+					}
+				]
+			},
+			{
+				"name": "SocialSphere",
+				"description": "Social Sphere permite a los usuarios crear publicaciones y compartirlas con sus seguidores.",
+				"tags": [
+					{
+						"name": "react",
+						"color": "blue",
+						"image": "/tech/reactjs.png"
+					},
+					{
+						"name": "tailwind",
+						"color": "teal",
+						"image": "/tech/tailwind.png"
+					},
+					{
+						"name": "redux",
+						"color": "violet",
+						"image": "/tech/redux.png"
+					},
+					{
+						"name": "node",
+						"color": "green",
+						"image": "/tech/nodejs.png"
+					},
+					{
+						"name": "mongodb",
+						"color": "green",
+						"image": "/tech/mongodb.png"
+					}
+				],
+				"image": "/pngprojects/socialsphere.png",
+				"demo_links": [
+					{
+						"to": "live",
+						"href": "https://sphereback.vercel.app/login",
+						"icon": "/tech/link.png"
+					},
+					{
+						"to": "github",
+						"href": "https://github.com/rtzboy/socialmedia",
+						"icon": "/tech/github.png"
+					}
+				]
+			}
+		]
+	}
 }
