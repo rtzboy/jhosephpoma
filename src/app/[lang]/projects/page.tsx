@@ -19,7 +19,7 @@ const Projects = async ({ params }: ProjectsT) => {
 	const { project } = await getDictionary(lang);
 
 	return (
-		<main className='flex-col gap-16 max-w-7xl pt-[100px] mx-auto flex px-4'>
+		<main className='flex-col gap-10 max-w-7xl pt-[100px] mx-auto flex px-4'>
 			<h2 className='text-[40px] font-bold'>{project.title}</h2>
 			<section className='flex flex-col gap-8 md:flex-row'>
 				<p className='leading-loose md:w-[50%]'>{project.description}</p>
@@ -56,7 +56,7 @@ const Projects = async ({ params }: ProjectsT) => {
 								className='object-cover'
 							/>
 						</div>
-						<div className='flex flex-col justify-between gap-4'>
+						<div className='flex flex-col justify-between gap-6'>
 							<div className='font-bold text-2xl'>{work.name}</div>
 							<div className='leading-7'>{work.description}</div>
 							<ul className='flex gap-4'>

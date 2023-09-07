@@ -4,9 +4,10 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useEffect, useState } from 'react';
 import logoname from '../../public/logo_dark.png';
+import NavMobile from './NavMobile';
 import LangSwitcher from './lang-switcher';
 
-type NavbarT = {
+export type NavbarT = {
 	links: { id: number; href: string; name: string }[];
 	lang: string;
 };
@@ -34,18 +35,18 @@ const NavBar = ({ links, lang }: NavbarT) => {
 					<Link href={`/${lang}`} className='flex items-center gap-4 text-2xl'>
 						<Image
 							src={logoname}
-							width={35}
-							style={{ filter: 'drop-shadow(0px 0px 3px rgba(110, 231, 183,0.4))' }}
-							height={35}
-							quality={100}
 							alt='jhoseph'
+							width={40}
+							height={40}
+							style={{ filter: 'drop-shadow(0px 0px 3px rgba(110, 231, 183,0.4))' }}
+							quality={100}
 						/>
 						<span className='bg-clip-text shadow-text text-transparent bg-gradient-to-r from-cyan-400 font-bold to-emerald-300'>
 							Jhoseph Poma
 						</span>
 					</Link>
 				</h1>
-				<ul className='flex gap-8 items-center'>
+				<ul className='hidden sm:flex gap-8 items-center'>
 					{links.map(link => {
 						let linkClass =
 							`/${lang}${link.href}`.length === 4
@@ -65,9 +66,12 @@ const NavBar = ({ links, lang }: NavbarT) => {
 					})}
 					<LangSwitcher lang={lang} />
 				</ul>
+				{/* mobile */}
+				<NavMobile links={links} lang={lang} />
 			</div>
+			{/* scrolling vertical > 120 [#121212]  [#1c1c1c]*/}
 			<ul
-				className={`flex transition-all duration-500 text-emerald-300 navbar-nav justify-center gap-16 h-[70px] items-center fixed backdrop-blur-[8px] w-full ${
+				className={`hidden sm:flex transition-all duration-500 text-emerald-300 font-semibold navbar-nav justify-center gap-16 h-[70px] items-center fixed z-40 backdrop-blur-[8px] w-full bg-[#121212]/70 ${
 					floatingNav ? 'opacity-100 visible top-0' : 'opacity-0 invisible -top-16'
 				}`}
 			>
@@ -80,8 +84,16 @@ const NavBar = ({ links, lang }: NavbarT) => {
 					return (
 						<li key={link.id} className='group relative nav-item transition-all duration-500'>
 							<Link href={`/${lang}${link.href}`}>{`${link.name}`}</Link>
-							<span className='pointer-events-none absolute rotate-[110deg] bottom-3 -left-7 w-0 h-0.5 bg-emerald-300 transition-all duration-300 ease-in-out group-hover:w-[20px]' />
-							<span className='pointer-events-none absolute rotate-[110deg] bottom-3 -left-5 w-0 h-0.5 bg-emerald-300 transition-all duration-300 ease-in-out group-hover:w-[20px]' />
+							<span
+								className={`pointer-events-none absolute rotate-[110deg] bottom-3 -left-7 w-0 h-0.5 bg-emerald-300 transition-all duration-300 ease-in-out ${
+									isActive ? '' : 'group-hover:w-[20px]'
+								}`}
+							/>
+							<span
+								className={`pointer-events-none absolute rotate-[110deg] bottom-3 -left-5 w-0 h-0.5 bg-emerald-300 transition-all duration-300 ease-in-out ${
+									isActive ? '' : 'group-hover:w-[20px]'
+								}`}
+							/>
 							{isActive && (
 								<>
 									<span className='pointer-events-none absolute rotate-[110deg] bottom-3 -left-7 w-[20px] h-0.5 bg-emerald-300 transition-all duration-300 ease-in-out' />
