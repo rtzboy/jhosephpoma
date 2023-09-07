@@ -43,7 +43,7 @@ const Projects = async ({ params }: ProjectsT) => {
 					</span>
 				</div>
 			</section>
-			<h3 className='text-3xl font-semibold'>Tuvieja</h3>
+			<h3 className='text-3xl font-semibold'>{project.filter}</h3>
 			<section className='grid grid-cols-[repeat(auto-fit,minmax(320px,1fr))] gap-8'>
 				{project.works.map(work => (
 					<div key={work.name} className='p-4 rounded-xl bg-[#1c1c1c]'>

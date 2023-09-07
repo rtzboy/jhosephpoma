@@ -15,7 +15,7 @@ const About = async () => {
 	}[] = await fnCallJson();
 
 	return (
-		<main>
+		<main className='flex-col gap-10 max-w-7xl pt-[100px] mx-auto flex px-4'>
 			{trivia.map((elm, idx) => (
 				<div className='my-4' key={idx}>
 					<p className='text-lg my-2'>{elm.question}</p>

@@ -8,6 +8,7 @@
 		"title": "Mi trabajo",
 		"description": "Proyectos como este que permiten a los usuarios buscar recetas fácilmente en varios sitios web. Ya sea que sea un chef experimentado que busca nueva inspiración o un entusiasta de la cocina que busca el plato perfecto, Plate Explorer ofrece una plataforma centralizada para descubrir y acceder a una amplia gama de recetas.",
 		"subtitle": "Proyectos Terminados",
+		"filter": "Todos",
 		"works": [
 			{
 				"name": "PassPower",
@@ -197,12 +198,12 @@
 				"image": "/pngprojects/weather.png",
 				"demo_links": [
 					{
-						"to": "",
+						"to": "live",
 						"href": "https://weatherjpdev.netlify.app/",
 						"icon": "/tech/link.png"
 					},
 					{
-						"to": "",
+						"to": "github",
 						"href": "https://github.com/rtzboy/weatherapp",
 						"icon": "/tech/github.png"
 					}

@@ -8,6 +8,7 @@
 		"title": "My Work",
 		"description": "Projects like this that allows users to easily search for recipes on various websites. Whether you're a seasoned chef looking for new inspiration or a cooking enthusiast looking for the perfect dish, Plate Explorer offers a centralized platform for discovering and accessing a wide range of recipes from the web.",
 		"subtitle": "Done Projects",
+		"filter": "All",
 		"works": [
 			{
 				"name": "PassPower",
@@ -168,12 +169,12 @@
 				"image": "/pngprojects/platexplorer.png",
 				"demo_links": [
 					{
-						"to": "",
+						"to": "live",
 						"href": "https://platexplorerjpdev.netlify.app/",
 						"icon": "/tech/link.png"
 					},
 					{
-						"to": "",
+						"to": "github",
 						"href": "https://github.com/rtzboy/foodrecipes",
 						"icon": "/tech/github.png"
 					}
@@ -197,12 +198,12 @@
 				"image": "/pngprojects/weather.png",
 				"demo_links": [
 					{
-						"to": "",
+						"to": "live",
 						"href": "https://weatherjpdev.netlify.app/",
 						"icon": "/tech/link.png"
 					},
 					{
-						"to": "",
+						"to": "github",
 						"href": "https://github.com/rtzboy/weatherapp",
 						"icon": "/tech/github.png"
 					}
