@@ -35,6 +35,5 @@ export function middleware(request: NextRequest) {
 }
 
 export const config = {
-	// load images on <Image /> component but dont redirect localhost:3000/ to localhost:3000/(es|en)
-	matcher: ['/(en|es)((?!api|_next/static|_next/image|favicon.ico).*)']
+	matcher: ['/']
 };

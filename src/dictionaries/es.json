@@ -11,7 +11,8 @@
 		"filter": "Todos",
 		"works": [
 			{
-				"name": "PassPower",
+				"name": "Pass Power",
+				"details": "pass_power",
 				"description": "PassPower tiene como objetivo proporcionar a los usuarios una herramienta versátil para crear contraseñas seguras.",
 				"tags": [
 					{
@@ -45,8 +46,9 @@
 				]
 			},
 			{
-				"name": "QuoteQuik Typing Challenge",
-				"description": "QuoteQuik Typing Challenge ofrece a los usuarios mejorar sus habilidades de mecanografía mientras transcriben citas aleatorias.",
+				"name": "QuoteQuik Typing",
+				"details": "quotequik_typing",
+				"description": "QuoteQuik Typing ofrece a los usuarios mejorar sus habilidades de mecanografía mientras transcriben citas aleatorias.",
 				"tags": [
 					{
 						"name": "react",
@@ -79,7 +81,8 @@
 				]
 			},
 			{
-				"name": "SuperSearch: Uniting Worlds",
+				"name": "Super Search: Uniting Worlds",
+				"details": "supersearch",
 				"description": "SuperSearch: Uniting Worlds proporciona a los fanáticos de los superhéroes información biográfica, estadísticas de poder y más.",
 				"tags": [
 					{
@@ -114,6 +117,7 @@
 			},
 			{
 				"name": "EasyTask ",
+				"details": "easy_task",
 				"description": "EasyTask es una lista de tareas simple que le permite agregar, editar y eliminar tareas.",
 				"tags": [
 					{
@@ -143,6 +147,7 @@
 			},
 			{
 				"name": "Plate Explorer",
+				"details": "plate_explorer",
 				"description": "Plate Explorer permite a los usuarios buscar fácilmente recetas en varios sitios web.",
 				"tags": [
 					{
@@ -182,6 +187,7 @@
 			},
 			{
 				"name": "WeatherWonders",
+				"details": "weather_wonders",
 				"description": "Manténgase informado sobre las condiciones climáticas actuales y un pronóstico de 5 días.",
 				"tags": [
 					{
@@ -211,6 +217,7 @@
 			},
 			{
 				"name": "SocialSphere",
+				"details": "social_sphere",
 				"description": "Social Sphere permite a los usuarios crear publicaciones y compartirlas con sus seguidores.",
 				"tags": [
 					{
@@ -254,5 +261,19 @@
 				]
 			}
 		]
-	}
+	},
+	"project_details": [
+		{
+			"id": "pass_power",
+			"description": "PassPower tiene como objetivo proporcionar a los usuarios una herramienta versátil para crear contraseñas seguras adaptadas a sus necesidades específicas. Su diseño fácil de usar garantiza que los usuarios puedan generarlos fácilmente."
+		},
+		{
+			"id": "quotequik_typing",
+			"description": "QuoteQuik Typing ofrece a los usuarios mejorar sus habilidades de mecanografía mientras transcriben citas aleatorias de una API. Este proyecto combina la emoción de los juegos con la conveniencia de mejorar las habilidades de mecanografía, lo que lo convierte en una herramienta valiosa tanto para usuarios ocasionales como para aquellos que buscan perfeccionar su precisión y velocidad al escribir."
+		},
+		{
+			"id": "supersearch",
+			"description": "El proyecto SuperSearch: Uniting Worlds ofrece a los fanáticos y entusiastas una plataforma para sumergirse profundamente en los vastos y emocionantes mundos de los superhéroes de DC y Marvel. Este proyecto ofrece información sobre la biografía, powerstats y más."
+		}
+	]
 }

@@ -11,7 +11,8 @@
 		"filter": "All",
 		"works": [
 			{
-				"name": "PassPower",
+				"name": "Pass Power",
+				"details": "pass_power",
 				"description": "PassPower aims to provide users with a versatile tool for creating secure passwords.",
 				"tags": [
 					{
@@ -45,8 +46,9 @@
 				]
 			},
 			{
-				"name": "QuoteQuik Typing Challenge",
-				"description": "QuoteQuik Typing Challenge offers users to improve their typing skills while transcribing random quotes.",
+				"name": "QuoteQuik Typing",
+				"details": "quotequik_typing",
+				"description": "QuoteQuik Typing offers users to improve their typing skills while transcribing random quotes.",
 				"tags": [
 					{
 						"name": "react",
@@ -79,7 +81,8 @@
 				]
 			},
 			{
-				"name": "SuperSearch: Uniting Worlds",
+				"name": "Super Search: Uniting Worlds",
+				"details": "supersearch",
 				"description": "SuperSearch: Uniting Worlds offers superhero fans information about the biography, powerstats and more.",
 				"tags": [
 					{
@@ -114,6 +117,7 @@
 			},
 			{
 				"name": "EasyTask",
+				"details": "easy_task",
 				"description": "EasyTask is a simple task list allows you to add, edit and delete tasks.",
 				"tags": [
 					{
@@ -143,6 +147,7 @@
 			},
 			{
 				"name": "Plate Explorer",
+				"details": "plate_explorer",
 				"description": "Plate Explorer allows users to easily search for recipes on various websites.",
 				"tags": [
 					{
@@ -182,6 +187,7 @@
 			},
 			{
 				"name": "WeatherWonders",
+				"details": "weather_wonders",
 				"description": "Stay informed about the current weather conditions and a 5-day forecast",
 				"tags": [
 					{
@@ -211,6 +217,7 @@
 			},
 			{
 				"name": "SocialSphere",
+				"details": "social_sphere",
 				"description": "SocialSphere allows users to create posts and share them with their followers.",
 				"tags": [
 					{
@@ -254,5 +261,19 @@
 				]
 			}
 		]
-	}
+	},
+	"project_details": [
+		{
+			"id": "pass_power",
+			"description": "PassPower aims to provide users with a versatile tool for creating secure passwords tailored to their specific needs. Its user-friendly design ensures that users can easily generate them."
+		},
+		{
+			"id": "quotequik_typing",
+			"description": "QuoteQuik Typing offers users to improve their typing skills while transcribing random quotes from an API. This project combines the excitement of gaming with the convenience of improving typing skills, making it a valuable tool for both casual users and those looking to hone their typing accuracy and speed."
+		},
+		{
+			"id": "supersearch",
+			"description": "SuperSearch: Uniting Worlds project offers fans and enthusiasts a platform to dive deep into the vast and exciting worlds of DC and Marvel superheroes. This project offers information about the biography, powerstats and more."
+		}
+	]
 }
