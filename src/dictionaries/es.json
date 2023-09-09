@@ -275,5 +275,16 @@
 			"id": "supersearch",
 			"description": "El proyecto SuperSearch: Uniting Worlds ofrece a los fanáticos y entusiastas una plataforma para sumergirse profundamente en los vastos y emocionantes mundos de los superhéroes de DC y Marvel. Este proyecto ofrece información sobre la biografía, powerstats y más."
 		}
-	]
+	],
+	"contact": {
+		"title": "Ponte en Contacto",
+		"description": "Gracias por su interés en ponerse en contacto conmigo. Agradezco sus comentarios, preguntas y sugerencias. Si tiene una pregunta o comentario específico, no dude en enviarme un correo electrónico ",
+		"email": "aquí",
+		"form": {
+			"name": "Su Nombre",
+			"email": "Su Email",
+			"message": "Su Mensaje",
+			"btnSend": "Enviar"
+		}
+	}
 }
