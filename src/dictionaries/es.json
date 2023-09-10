@@ -4,6 +4,11 @@
 		{ "id": 2, "href": "/projects", "name": "Proyectos" },
 		{ "id": 3, "href": "/contact", "name": "Contacto" }
 	],
+	"home": {
+		"first": "Hola!",
+		"second": "Aquí!",
+		"description": "Desarrollador front-end apasionado por crear experiencias de usuario atractivas e intuitivas."
+	},
 	"project": {
 		"title": "Mi trabajo",
 		"description": "Proyectos como este que permiten a los usuarios buscar recetas fácilmente en varios sitios web. Ya sea que sea un chef experimentado que busca nueva inspiración o un entusiasta de la cocina que busca el plato perfecto, Plate Explorer ofrece una plataforma centralizada para descubrir y acceder a una amplia gama de recetas.",

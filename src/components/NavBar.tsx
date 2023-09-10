@@ -32,7 +32,7 @@ const NavBar = ({ links, lang }: NavbarT) => {
 		<nav className='h-[80px] relative'>
 			<div className='max-w-7xl w-full px-8 h-full flex items-center justify-between mx-auto'>
 				<h1>
-					<Link href={`/${lang}`} className='flex items-center gap-4 text-2xl'>
+					<Link href={`/${lang}`} className='flex items-center gap-4 text-3xl'>
 						<Image
 							src={logoname}
 							alt='jhoseph'
@@ -42,7 +42,7 @@ const NavBar = ({ links, lang }: NavbarT) => {
 							quality={100}
 						/>
 						<span className='bg-clip-text shadow-text text-transparent bg-gradient-to-r from-cyan-400 font-bold to-emerald-300'>
-							Jhoseph Poma
+							Jhoseph
 						</span>
 					</Link>
 				</h1>
