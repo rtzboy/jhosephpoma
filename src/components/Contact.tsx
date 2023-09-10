@@ -1,22 +1,44 @@
 'use client';
 
+import emailjs from '@emailjs/browser';
 import { ChangeEvent, FormEvent, useEffect, useRef, useState } from 'react';
 
 type Props = {
 	btnTxt: string;
 	langForm: { name: string; email: string; message: string };
+	envKeys: { key: string; service_key: string; template_key: string };
 };
 
-const Contact = ({ btnTxt, langForm }: Props) => {
+const Contact = ({ btnTxt, langForm, envKeys }: Props) => {
 	const [formDetails, setFormDetails] = useState({ name: '', email: '', message: '' });
+	const [loading, setLoading] = useState(false);
 	const txtMessage = useRef<HTMLTextAreaElement>(null);
 
 	const handleFormChange = (evt: ChangeEvent<HTMLInputElement>) =>
 		setFormDetails({ ...formDetails, [evt.target.name]: cutTxt(evt.target.value, 50) });
 
-	const handleSubmit = (evt: FormEvent<HTMLFormElement>) => {
+	const handleSubmit = async (evt: FormEvent<HTMLFormElement>) => {
 		evt.preventDefault();
-		alert('send');
+		setLoading(true);
+
+		const response = await emailjs.send(
+			envKeys.service_key,
+			envKeys.template_key,
+			{
+				from_name: formDetails.name,
+				to_name: 'Armando',
+				from_email: formDetails.email,
+				to_email: 'japoma_200@hotmail.com',
+				message: formDetails.message
+			},
+			envKeys.key
+		);
+		if (response.status === 200) {
+			setLoading(false);
+			setFormDetails({ name: '', email: '', message: '' });
+		} else {
+			setLoading(false);
+		}
 	};
 
 	useEffect(() => {
@@ -59,7 +81,7 @@ const Contact = ({ btnTxt, langForm }: Props) => {
 				></textarea>
 			</label>
 			<button
-				disabled={!formDetails.name || !formDetails.email || !formDetails.message}
+				disabled={!formDetails.name || !formDetails.email || !formDetails.message || loading}
 				className='disabled:opacity-50 bg-gradient-to-r from-emerald-400 font-bold to-cyan-300 text-black rounded-lg py-2'
 			>
 				{btnTxt}
