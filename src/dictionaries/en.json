@@ -7,8 +7,132 @@
 	"home": {
 		"first": "Hey there!",
 		"second": "Here!",
-		"description": "Front-end developer with a passion for creating engaging and intuitive user experiences."
+		"description": "Front-end developer with a passion for creating engaging and intuitive user experiences.",
+		"work": "My Work",
+		"more": "See more"
 	},
+	"aboutme": {
+		"title": "About Me",
+		"paragraph_1": "Graduated in Computer Engineering, committed to the work entrusted to me. The constant search for learning motivates me to stay up to date with the latest technological trends and discover new ways to improve.",
+		"paragraph_2": "Willing to learn new technologies and face the challenges they entail."
+	},
+	"preview_projects": [
+		{
+			"name": "Plate Explorer",
+			"details": "plate_explorer",
+			"description": "Plate Explorer allows users to easily search for recipes on various websites.",
+			"tags": [
+				{
+					"name": "react",
+					"color": "blue",
+					"image": "/tech/reactjs.png"
+				},
+				{
+					"name": "tailwind",
+					"color": "teal",
+					"image": "/tech/tailwind.png"
+				},
+				{
+					"name": "node",
+					"color": "green",
+					"image": "/tech/nodejs.png"
+				},
+				{
+					"name": "mongodb",
+					"color": "green",
+					"image": "/tech/mongodb.png"
+				}
+			],
+			"image": "/pngprojects/platexplorer.png",
+			"demo_links": [
+				{
+					"to": "live",
+					"href": "https://platexplorerjpdev.netlify.app/",
+					"icon": "/tech/link.png"
+				},
+				{
+					"to": "github",
+					"href": "https://github.com/rtzboy/foodrecipes",
+					"icon": "/tech/github.png"
+				}
+			]
+		},
+		{
+			"name": "WeatherWonders",
+			"details": "weather_wonders",
+			"description": "Stay informed about the current weather conditions and a 5-day forecast",
+			"tags": [
+				{
+					"name": "react",
+					"color": "blue",
+					"image": "/tech/reactjs.png"
+				},
+				{
+					"name": "tailwind",
+					"color": "teal",
+					"image": "/tech/tailwind.png"
+				}
+			],
+			"image": "/pngprojects/weather.png",
+			"demo_links": [
+				{
+					"to": "live",
+					"href": "https://weatherjpdev.netlify.app/",
+					"icon": "/tech/link.png"
+				},
+				{
+					"to": "github",
+					"href": "https://github.com/rtzboy/weatherapp",
+					"icon": "/tech/github.png"
+				}
+			]
+		},
+		{
+			"name": "SocialSphere",
+			"details": "social_sphere",
+			"description": "SocialSphere allows users to create posts and share them with their followers.",
+			"tags": [
+				{
+					"name": "react",
+					"color": "blue",
+					"image": "/tech/reactjs.png"
+				},
+				{
+					"name": "tailwind",
+					"color": "teal",
+					"image": "/tech/tailwind.png"
+				},
+				{
+					"name": "redux",
+					"color": "violet",
+					"image": "/tech/redux.png"
+				},
+				{
+					"name": "node",
+					"color": "green",
+					"image": "/tech/nodejs.png"
+				},
+				{
+					"name": "mongodb",
+					"color": "green",
+					"image": "/tech/mongodb.png"
+				}
+			],
+			"image": "/pngprojects/socialsphere.png",
+			"demo_links": [
+				{
+					"to": "live",
+					"href": "https://sphereback.vercel.app/login",
+					"icon": "/tech/link.png"
+				},
+				{
+					"to": "github",
+					"href": "https://github.com/rtzboy/socialmedia",
+					"icon": "/tech/github.png"
+				}
+			]
+		}
+	],
 	"project": {
 		"title": "My Work",
 		"description": "Projects like this that allows users to easily search for recipes on various websites. Whether you're a seasoned chef looking for new inspiration or a cooking enthusiast looking for the perfect dish, Plate Explorer offers a centralized platform for discovering and accessing a wide range of recipes from the web.",

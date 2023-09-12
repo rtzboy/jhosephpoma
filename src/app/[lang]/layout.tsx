@@ -1,5 +1,6 @@
 import Header from '@/components/Header';
 import MouseCircle from '@/components/MouseCircle';
+import Footer from '@/components/home/Footer';
 import type { Metadata } from 'next';
 import { Roboto_Mono } from 'next/font/google';
 import { Locale, i18n } from '../../i18n-config';
@@ -28,6 +29,7 @@ export default function RootLayout({ children, params }: RootLayoutT) {
 				<MouseCircle />
 				<Header lang={params.lang} />
 				{children}
+				<Footer lang={params.lang} />
 			</body>
 		</html>
 	);

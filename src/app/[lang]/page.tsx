@@ -1,4 +1,7 @@
 import HomeBtns from '@/components/buttons/HomeBtns';
+import ToBottom from '@/components/buttons/ToBottom';
+import Aboutme from '@/components/home/Aboutme';
+import Someprojects from '@/components/home/Someprojects';
 import Blob from '@/components/icons/Blob';
 import Github from '@/components/icons/Github';
 import Instagram from '@/components/icons/Instagram';
@@ -12,10 +15,10 @@ import jpdevlogo from '../../../public/jpdevlogo.png';
 
 const Home = async ({ params }: { params: { lang: Locale } }) => {
 	const { lang } = params;
-	const { home } = await getDictionary(lang);
+	const { home, preview_projects, aboutme } = await getDictionary(lang);
 
 	return (
-		<main>
+		<main className='px-4'>
 			<section className='h-screen relative'>
 				<div className='absolute inset-0 bot_transparent'>
 					<Image
@@ -25,7 +28,7 @@ const Home = async ({ params }: { params: { lang: Locale } }) => {
 						className='-z-[15] w-full h-full opacity-10'
 					/>
 				</div>
-				<div className='flex md:flex-row flex-col gap-4 max-w-7xl sm:pt-[200px] pt-[100px] mx-auto px-4'>
+				<div className='flex md:flex-row flex-col gap-4 max-w-7xl sm:pt-[200px] pt-[100px] mx-auto'>
 					<div className='relative md:w-[50%] flex flex-col gap-6'>
 						<div className='absolute inset-0 -z-10'>
 							<Image
@@ -40,7 +43,7 @@ const Home = async ({ params }: { params: { lang: Locale } }) => {
 							<span className='inline-block animate-waving text-[40px]'>👋</span>
 						</div>
 						<div className='text-[40px] font-bold md:text-[50px]'>
-							<span className='bg-clip-text hover:scale-110 shadow-text text-transparent bg-gradient-to-r from-emerald-400 font-bold to-cyan-300'>
+							<span className='bg-clip-text shadow-text text-transparent bg-gradient-to-r from-emerald-400 font-bold to-cyan-300'>
 								Jhoseph Poma{' '}
 							</span>
 							<span>{home.second}</span>
@@ -64,8 +67,12 @@ const Home = async ({ params }: { params: { lang: Locale } }) => {
 						<Image src={homeright} fill={true} alt='xd' className='object-contain' />
 					</div>
 				</div>
+				<div className='max-w-7xl mx-auto flex justify-center py-8'>
+					<ToBottom />
+				</div>
 			</section>
-			<section className='h-screen'></section>
+			<Aboutme aboutme={aboutme} />
+			<Someprojects prevprojects={preview_projects} home_title={home} lang={lang} />
 		</main>
 	);
 };

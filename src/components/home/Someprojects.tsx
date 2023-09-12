@@ -1,42 +1,19 @@
-import { Locale } from '@/i18n-config';
-import { getDictionary } from '@/lib/dictionary';
+'use client';
+
 import Image from 'next/image';
+import Link from 'next/link';
+import External from '../icons/External';
 
-type ProjectsT = { params: { lang: Locale } };
-
-const Projects = async ({ params }: ProjectsT) => {
-	const { lang } = params;
-	const { project } = await getDictionary(lang);
-
+const Someprojects = ({ prevprojects, home_title, lang }: SomeProjectsT) => {
 	return (
-		<main className='flex-col gap-10 max-w-7xl pt-[100px] mx-auto flex px-4'>
-			<h2 className='text-[40px] font-bold'>{project.title}</h2>
-			<section className='flex flex-col gap-8 md:flex-row'>
-				<p className='leading-loose md:w-[50%]'>{project.description}</p>
-				<div className='md:w-[50%] relative'>
-					<video
-						src='https://res.cloudinary.com/dgg98rkmj/video/upload/v1693875047/loopExplorer_juohmn.mp4'
-						autoPlay
-						loop
-						muted
-						className='rounded-2xl w-auto'
-					/>
-					<span className='absolute top-2 left-2'>
-						<a
-							href='https://platexplorerjpdev.netlify.app/'
-							target='_blank'
-							rel='noreferrer'
-							className='px-2 py-0.5 rounded-lg bg-cyan-700'
-						>
-							Open
-						</a>
-					</span>
-				</div>
-			</section>
-			<h3 className='text-3xl font-semibold'>{project.filter}</h3>
-			<section className='grid grid-cols-[repeat(auto-fit,minmax(320px,1fr))] gap-8'>
-				{project.works.map(work => (
-					<div key={work.name} className='p-4 rounded-xl bg-[#1c1c1c]'>
+		<section className='max-w-7xl mx-auto py-[50px] sm:py-[150px] flex flex-col gap-8'>
+			<h3 className='text-[40px] font-semibold'>{home_title.work}</h3>
+			<article className='grid grid-cols-[repeat(auto-fit,minmax(320px,1fr))] gap-8'>
+				{prevprojects.map(work => (
+					<div
+						key={work.name}
+						className='p-4 rounded-xl bg-[#1c1c1c] hover:scale-[1.02] transition-all'
+					>
 						<div className='relative overflow-hidden h-72 mb-4'>
 							<Image
 								src={work.image}
@@ -75,9 +52,45 @@ const Projects = async ({ params }: ProjectsT) => {
 						</div>
 					</div>
 				))}
-			</section>
-		</main>
+			</article>
+			<footer className='flex justify-center'>
+				<div className='inline-block'>
+					<Link
+						href={`${lang}/projects`}
+						className='flex gap-2 items-center justify-center hover:underline decoration-2 hover:underline-offset-4'
+					>
+						<span className=''>{home_title.more}</span>
+						<External className='h-5' />
+					</Link>
+				</div>
+			</footer>
+		</section>
 	);
+};
+
+interface DemoLink {
+	to: string;
+	href: string;
+	icon: string;
+}
+
+interface Tag {
+	name: string;
+	color: string;
+	image: string;
+}
+
+type SomeProjectsT = {
+	prevprojects: {
+		name: string;
+		details: string;
+		description: string;
+		tags: Tag[];
+		image: string;
+		demo_links: DemoLink[];
+	}[];
+	home_title: { work: string; more: string };
+	lang: string;
 };
 
 const colors = {
@@ -90,4 +103,4 @@ const colors = {
 	violet: 'bg-violet-600/20'
 };
 
-export default Projects;
+export default Someprojects;
