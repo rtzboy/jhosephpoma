@@ -31,11 +31,11 @@ const MouseCircle = () => {
 		<>
 			<div
 				style={{ top: `${coord.coordY}px`, left: `${coord.coordX}px` }}
-				className={`-translate-x-1/2 -translate-y-1/2 pointer-events-none fixed z-[999] w-7 h-7 rounded-full border ${isHoverPointer}`}
+				className={`max-[900px]:hidden -translate-x-1/2 -translate-y-1/2 pointer-events-none fixed z-[999] w-7 h-7 rounded-full border ${isHoverPointer}`}
 			/>
 			<div
 				style={{ top: `${coordPoint.y}px`, left: `${coordPoint.x}px` }}
-				className={`-translate-x-1/2 -translate-y-1/2 pointer-events-none fixed z-[999] w-1.5 h-1.5 transition-transform duration-300 rounded-full ${isHoverPointer2}`}
+				className={`max-[900px]:hidden -translate-x-1/2 -translate-y-1/2 pointer-events-none fixed z-[999] w-1.5 h-1.5 transition-transform duration-300 rounded-full ${isHoverPointer2}`}
 			/>
 		</>
 	);
