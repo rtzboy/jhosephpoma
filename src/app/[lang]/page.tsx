@@ -58,7 +58,7 @@ const Home = async ({ params }: { params: { lang: Locale } }) => {
 								</li>
 							))}
 						</ul>
-						<HomeBtns />
+						<HomeBtns lang={lang} />
 					</div>
 					<div className='md:w-[50%] relative overflow-hidden'>
 						<div className='flex items-center justify-center'>

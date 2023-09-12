@@ -36,6 +36,7 @@ const Contact = ({ btnTxt, langForm, envKeys }: Props) => {
 		if (response.status === 200) {
 			setLoading(false);
 			setFormDetails({ name: '', email: '', message: '' });
+			alert('Thank you! :)');
 		} else {
 			setLoading(false);
 		}
