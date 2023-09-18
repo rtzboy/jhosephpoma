@@ -1,4 +1,5 @@
 import Contact from '@/components/Contact';
+import Title from '@/components/Title';
 import { Locale } from '@/i18n-config';
 import { getDictionary } from '@/lib/dictionary';
 import env from '@/lib/env';
@@ -22,6 +23,7 @@ const About = async ({ params }: { params: { lang: Locale } }) => {
 
 	return (
 		<main className='flex-col gap-8 max-w-7xl pt-[100px] mx-auto flex px-4'>
+			<Title title='Jhoseph Poma | Contact' />
 			<h4 className='text-[40px] font-bold'>{contact.title}</h4>
 			<div className='flex gap-12 flex-col sm:flex-row'>
 				<div className='sm:w-[50%] sm:order-none order-last'>

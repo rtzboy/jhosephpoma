@@ -1,3 +1,4 @@
+import Title from '@/components/Title';
 import { Locale } from '@/i18n-config';
 import { getDictionary } from '@/lib/dictionary';
 import Image from 'next/image';
@@ -10,6 +11,7 @@ const Projects = async ({ params }: ProjectsT) => {
 
 	return (
 		<main className='flex-col gap-10 max-w-7xl pt-[100px] mx-auto flex px-4'>
+			<Title title='Jhoseph Poma | Projects' />
 			<h2 className='text-[40px] font-bold'>{project.title}</h2>
 			<section className='flex flex-col gap-8 md:flex-row'>
 				<p className='leading-loose md:w-[50%]'>{project.description}</p>

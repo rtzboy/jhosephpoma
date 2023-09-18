@@ -1,3 +1,4 @@
+import Title from '@/components/Title';
 import HomeBtns from '@/components/buttons/HomeBtns';
 import ToBottom from '@/components/buttons/ToBottom';
 import Aboutme from '@/components/home/Aboutme';
@@ -19,6 +20,7 @@ const Home = async ({ params }: { params: { lang: Locale } }) => {
 
 	return (
 		<main className='px-4'>
+			<Title title='Jhoseph Poma' />
 			<section className='h-screen relative'>
 				<div className='absolute inset-0 bot_transparent'>
 					<Image
