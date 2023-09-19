@@ -21,7 +21,7 @@ const Home = async ({ params }: { params: { lang: Locale } }) => {
 	return (
 		<main className='px-4'>
 			<Title title='Jhoseph Poma' />
-			<section className='h-screen relative'>
+			<section className='relative md:h-screen'>
 				<div className='absolute inset-0 bot_transparent'>
 					<Image
 						src={backline}
