@@ -140,6 +140,121 @@
 		"filter": "All",
 		"works": [
 			{
+				"name": "SocialSphere",
+				"details": "social_sphere",
+				"description": "SocialSphere allows users to create posts and share them with their followers.",
+				"tags": [
+					{
+						"name": "react",
+						"color": "blue",
+						"image": "/tech/reactjs.png"
+					},
+					{
+						"name": "tailwind",
+						"color": "teal",
+						"image": "/tech/tailwind.png"
+					},
+					{
+						"name": "redux",
+						"color": "violet",
+						"image": "/tech/redux.png"
+					},
+					{
+						"name": "node",
+						"color": "green",
+						"image": "/tech/nodejs.png"
+					},
+					{
+						"name": "mongodb",
+						"color": "green",
+						"image": "/tech/mongodb.png"
+					}
+				],
+				"image": "/pngprojects/socialsphere.png",
+				"demo_links": [
+					{
+						"to": "live",
+						"href": "https://sphereback.vercel.app/login",
+						"icon": "/tech/link.png"
+					},
+					{
+						"to": "github",
+						"href": "https://github.com/rtzboy/socialmedia",
+						"icon": "/tech/github.png"
+					}
+				]
+			},
+			{
+				"name": "WeatherWonders",
+				"details": "weather_wonders",
+				"description": "Stay informed about the current weather conditions and a 5-day forecast",
+				"tags": [
+					{
+						"name": "react",
+						"color": "blue",
+						"image": "/tech/reactjs.png"
+					},
+					{
+						"name": "tailwind",
+						"color": "teal",
+						"image": "/tech/tailwind.png"
+					}
+				],
+				"image": "/pngprojects/weather.png",
+				"demo_links": [
+					{
+						"to": "live",
+						"href": "https://weatherjpdev.netlify.app/",
+						"icon": "/tech/link.png"
+					},
+					{
+						"to": "github",
+						"href": "https://github.com/rtzboy/weatherapp",
+						"icon": "/tech/github.png"
+					}
+				]
+			},
+			{
+				"name": "Plate Explorer",
+				"details": "plate_explorer",
+				"description": "Plate Explorer allows users to easily search for recipes on various websites.",
+				"tags": [
+					{
+						"name": "react",
+						"color": "blue",
+						"image": "/tech/reactjs.png"
+					},
+					{
+						"name": "tailwind",
+						"color": "teal",
+						"image": "/tech/tailwind.png"
+					},
+					{
+						"name": "node",
+						"color": "green",
+						"image": "/tech/nodejs.png"
+					},
+					{
+						"name": "mongodb",
+						"color": "green",
+						"image": "/tech/mongodb.png"
+					}
+				],
+				"image": "/pngprojects/platexplorer.png",
+				"demo_links": [
+					{
+						"to": "live",
+						"href": "https://platexplorerjpdev.netlify.app/",
+						"icon": "/tech/link.png"
+					},
+					{
+						"to": "github",
+						"href": "https://github.com/rtzboy/foodrecipes",
+						"icon": "/tech/github.png"
+					}
+				]
+			},
+			{
 				"name": "Pass Power",
 				"details": "pass_power",
 				"description": "PassPower aims to provide users with a versatile tool for creating secure passwords.",
@@ -270,121 +385,6 @@
 					{
 						"to": "github",
 						"href": "https://github.com/rtzboy/todolist",
-						"icon": "/tech/github.png"
-					}
-				]
-			},
-			{
-				"name": "Plate Explorer",
-				"details": "plate_explorer",
-				"description": "Plate Explorer allows users to easily search for recipes on various websites.",
-				"tags": [
-					{
-						"name": "react",
-						"color": "blue",
-						"image": "/tech/reactjs.png"
-					},
-					{
-						"name": "tailwind",
-						"color": "teal",
-						"image": "/tech/tailwind.png"
-					},
-					{
-						"name": "node",
-						"color": "green",
-						"image": "/tech/nodejs.png"
-					},
-					{
-						"name": "mongodb",
-						"color": "green",
-						"image": "/tech/mongodb.png"
-					}
-				],
-				"image": "/pngprojects/platexplorer.png",
-				"demo_links": [
-					{
-						"to": "live",
-						"href": "https://platexplorerjpdev.netlify.app/",
-						"icon": "/tech/link.png"
-					},
-					{
-						"to": "github",
-						"href": "https://github.com/rtzboy/foodrecipes",
-						"icon": "/tech/github.png"
-					}
-				]
-			},
-			{
-				"name": "WeatherWonders",
-				"details": "weather_wonders",
-				"description": "Stay informed about the current weather conditions and a 5-day forecast",
-				"tags": [
-					{
-						"name": "react",
-						"color": "blue",
-						"image": "/tech/reactjs.png"
-					},
-					{
-						"name": "tailwind",
-						"color": "teal",
-						"image": "/tech/tailwind.png"
-					}
-				],
-				"image": "/pngprojects/weather.png",
-				"demo_links": [
-					{
-						"to": "live",
-						"href": "https://weatherjpdev.netlify.app/",
-						"icon": "/tech/link.png"
-					},
-					{
-						"to": "github",
-						"href": "https://github.com/rtzboy/weatherapp",
-						"icon": "/tech/github.png"
-					}
-				]
-			},
-			{
-				"name": "SocialSphere",
-				"details": "social_sphere",
-				"description": "SocialSphere allows users to create posts and share them with their followers.",
-				"tags": [
-					{
-						"name": "react",
-						"color": "blue",
-						"image": "/tech/reactjs.png"
-					},
-					{
-						"name": "tailwind",
-						"color": "teal",
-						"image": "/tech/tailwind.png"
-					},
-					{
-						"name": "redux",
-						"color": "violet",
-						"image": "/tech/redux.png"
-					},
-					{
-						"name": "node",
-						"color": "green",
-						"image": "/tech/nodejs.png"
-					},
-					{
-						"name": "mongodb",
-						"color": "green",
-						"image": "/tech/mongodb.png"
-					}
-				],
-				"image": "/pngprojects/socialsphere.png",
-				"demo_links": [
-					{
-						"to": "live",
-						"href": "https://sphereback.vercel.app/login",
-						"icon": "/tech/link.png"
-					},
-					{
-						"to": "github",
-						"href": "https://github.com/rtzboy/socialmedia",
 						"icon": "/tech/github.png"
 					}
 				]
