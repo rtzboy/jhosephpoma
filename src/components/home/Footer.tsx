@@ -6,7 +6,7 @@ import logoname from '../../../public/logo_dark.png';
 
 const Footer = ({ lang }: { lang: Locale }) => {
 	return (
-		<footer className='max-w-7xl mx-auto py-[20px] flex flex-col gap-8 items-center'>
+		<footer className='max-w-7xl mx-auto py-8 flex flex-col gap-8 items-center'>
 			<div>
 				<Link href={`/${lang}`} className='flex items-center gap-4 text-3xl'>
 					<Image

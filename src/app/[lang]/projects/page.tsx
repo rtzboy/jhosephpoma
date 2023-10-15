@@ -1,11 +1,11 @@
 import Title from '@/components/Title';
 import { Locale } from '@/i18n-config';
 import { getDictionary } from '@/lib/dictionary';
-import Image from 'next/image';
+import FilterProjects from './_components/FilterProjects';
 
-type ProjectsT = { params: { lang: Locale } };
+type ProjectsT = { params: { lang: Locale }; searchParams: { filter: string } };
 
-const Projects = async ({ params }: ProjectsT) => {
+const Projects = async ({ params, searchParams }: ProjectsT) => {
 	const { lang } = params;
 	const { project } = await getDictionary(lang);
 
@@ -35,61 +35,9 @@ const Projects = async ({ params }: ProjectsT) => {
 					</span>
 				</div>
 			</section>
-			<h3 className='text-3xl font-semibold'>{project.filter}</h3>
-			<section className='grid grid-cols-[repeat(auto-fit,minmax(320px,1fr))] gap-8'>
-				{project.works.map(work => (
-					<div key={work.name} className='p-4 rounded-xl bg-[#1c1c1c]'>
-						<div className='relative overflow-hidden h-72 mb-4'>
-							<Image
-								src={work.image}
-								alt={work.name}
-								fill={true}
-								sizes='(min-width: 1360px) 363px, (min-width: 1060px) 26.43vw, (min-width: 720px) calc(50vw - 64px), (min-width: 400px) calc(100vw - 64px), calc(35vw + 183px)'
-								className='object-cover'
-							/>
-						</div>
-						<div className='flex flex-col justify-between gap-6'>
-							<div className='font-bold text-2xl'>{work.name}</div>
-							<div className='leading-7'>{work.description}</div>
-							<ul className='flex gap-4'>
-								{work.demo_links.map(link => (
-									<li key={link.href}>
-										<a href={link.href} target='_blank' rel='noreferrer' className='flex gap-2'>
-											<Image src={link.icon} alt='demo' width={25} height={25} />
-											<span>{link.to}</span>
-										</a>
-									</li>
-								))}
-							</ul>
-							<ul className='flex gap-2 flex-wrap'>
-								{work.tags.map(tag => (
-									<li
-										key={tag.name}
-										className={`flex gap-1 items-center ${
-											colors[tag.color as keyof typeof colors]
-										} italic text-sm px-3 py-0.5 rounded-xl `}
-									>
-										<Image src={tag.image} alt={tag.name} width={20} height={20} />
-										<div>{tag.name}</div>
-									</li>
-								))}
-							</ul>
-						</div>
-					</div>
-				))}
-			</section>
+			<FilterProjects projects={project.works} lang={lang} filter={project.filter} />
 		</main>
 	);
-};
-
-const colors = {
-	yellow: 'bg-yellow-500/20',
-	blue: 'bg-blue-500/20',
-	orange: 'bg-orange-600/20',
-	teal: 'bg-teal-600/20',
-	rose: 'bg-rose-600/20',
-	green: 'bg-green-600/20',
-	violet: 'bg-violet-600/20'
 };
 
 export default Projects;
